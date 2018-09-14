@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		19F5E2FF214C1249007A0F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5E2FE214C1249007A0F39 /* AppDelegate.swift */; };
-		19F5E301214C1249007A0F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5E300214C1249007A0F39 /* ViewController.swift */; };
 		19F5E304214C1249007A0F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5E302214C1249007A0F39 /* Main.storyboard */; };
 		19F5E306214C124B007A0F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F5E305214C124B007A0F39 /* Assets.xcassets */; };
 		19F5E309214C124B007A0F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5E307214C124B007A0F39 /* LaunchScreen.storyboard */; };
+		19F5E317214C176A007A0F39 /* MovieSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5E316214C176A007A0F39 /* MovieSearch.swift */; };
+		19F5E319214C1782007A0F39 /* MovieSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5E318214C1782007A0F39 /* MovieSearchController.swift */; };
+		19F5E31C214C17CB007A0F39 /* MovieSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5E31B214C17CB007A0F39 /* MovieSearchTableViewCell.swift */; };
+		19F5E31E214C17ED007A0F39 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5E31D214C17ED007A0F39 /* MovieTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19F5E2FB214C1249007A0F39 /* MovieSearchiOS21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearchiOS21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F5E2FE214C1249007A0F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19F5E300214C1249007A0F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19F5E303214C1249007A0F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19F5E305214C124B007A0F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19F5E308214C124B007A0F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19F5E30A214C124B007A0F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F5E316214C176A007A0F39 /* MovieSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearch.swift; sourceTree = "<group>"; };
+		19F5E318214C1782007A0F39 /* MovieSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchController.swift; sourceTree = "<group>"; };
+		19F5E31B214C17CB007A0F39 /* MovieSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchTableViewCell.swift; sourceTree = "<group>"; };
+		19F5E31D214C17ED007A0F39 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		19F5E2F2214C1249007A0F39 = {
 			isa = PBXGroup;
 			children = (
+				19F5E315214C147C007A0F39 /* Resources */,
 				19F5E2FD214C1249007A0F39 /* MovieSearchiOS21 */,
 				19F5E2FC214C1249007A0F39 /* Products */,
 			);
@@ -54,14 +61,69 @@
 		19F5E2FD214C1249007A0F39 /* MovieSearchiOS21 */ = {
 			isa = PBXGroup;
 			children = (
-				19F5E2FE214C1249007A0F39 /* AppDelegate.swift */,
-				19F5E300214C1249007A0F39 /* ViewController.swift */,
-				19F5E302214C1249007A0F39 /* Main.storyboard */,
-				19F5E305214C124B007A0F39 /* Assets.xcassets */,
-				19F5E307214C124B007A0F39 /* LaunchScreen.storyboard */,
-				19F5E30A214C124B007A0F39 /* Info.plist */,
+				19F5E31A214C17A0007A0F39 /* View */,
+				19F5E314214C143F007A0F39 /* ViewController */,
+				19F5E313214C141F007A0F39 /* ModelController */,
+				19F5E312214C13D8007A0F39 /* Model */,
+				19F5E311214C137C007A0F39 /* UI */,
 			);
 			path = MovieSearchiOS21;
+			sourceTree = "<group>";
+		};
+		19F5E311214C137C007A0F39 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				19F5E302214C1249007A0F39 /* Main.storyboard */,
+				19F5E307214C124B007A0F39 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		19F5E312214C13D8007A0F39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19F5E316214C176A007A0F39 /* MovieSearch.swift */,
+			);
+			name = Model;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		19F5E313214C141F007A0F39 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				19F5E318214C1782007A0F39 /* MovieSearchController.swift */,
+			);
+			name = ModelController;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		19F5E314214C143F007A0F39 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				19F5E31D214C17ED007A0F39 /* MovieTableViewController.swift */,
+			);
+			name = ViewController;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		19F5E315214C147C007A0F39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19F5E2FE214C1249007A0F39 /* AppDelegate.swift */,
+				19F5E305214C124B007A0F39 /* Assets.xcassets */,
+				19F5E30A214C124B007A0F39 /* Info.plist */,
+			);
+			name = Resources;
+			path = "MovieSearchiOS21/New Group1/New Group";
+			sourceTree = "<group>";
+		};
+		19F5E31A214C17A0007A0F39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19F5E31B214C17CB007A0F39 /* MovieSearchTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F5E301214C1249007A0F39 /* ViewController.swift in Sources */,
+				19F5E31E214C17ED007A0F39 /* MovieTableViewController.swift in Sources */,
 				19F5E2FF214C1249007A0F39 /* AppDelegate.swift in Sources */,
+				19F5E319214C1782007A0F39 /* MovieSearchController.swift in Sources */,
+				19F5E31C214C17CB007A0F39 /* MovieSearchTableViewCell.swift in Sources */,
+				19F5E317214C176A007A0F39 /* MovieSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MovieSearchiOS21/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearchiOS21/New Group1/New Group/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MovieSearchiOS21/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearchiOS21/New Group1/New Group/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
